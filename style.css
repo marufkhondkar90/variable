@@ -1,0 +1,61 @@
+.clr {
+    color: salmon;
+    text-transform: capitalize;
+    font-style: oblique;
+}
+
+/*global*/
+:root{
+    --purple: #800080;
+    --olive:olive;
+    --indigo: #ccccff;
+
+    --pop: 'Poppins', sans-serif;
+
+    --20: 20px;
+    --50: 50px;
+
+    --400p: 400;
+    --500p: 500;
+    --700p: 700;
+
+    --pad: 20px;
+}
+/*global*/
+
+body{
+    background-color: var(--indigo);
+    font-family: var(--pop);
+}
+/*global*/
+.box h1{
+    font-size: var(--50);
+    font-weight: var(--700p);
+    color: var(--purple);
+    text-align: center;
+    border: 2px solid var(--purple);
+    padding: var(--pad);
+}
+/*global*/
+
+.box p{
+    font-size: var(--20);
+    font-weight: var(--400p);
+    color: var(--olive);
+    text-align: center;
+}
+
+/* local */
+.box h2{
+    --fontSize: 50px; 
+    font-size: var(--fontSize);
+    color: var(--olive);
+    text-align: center;
+}
+
+/* global but locally changed*/
+.box h3{
+    --teal: #0000FF;
+    color: var(--purple);
+    text-align: center;
+}
